@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yanjun Gao - Personal Website</title>
     <style>
+        :root {
+            --primary: #0b3c5d;      /* deep navy blue */
+            --secondary: #1f6aa5;    /* medium blue */
+            --accent: #4fa3d1;       /* light accent blue */
+            --bg: #eef3f8;           /* page background */
+            --card: #ffffff;        /* section background */
+            --text: #1a1a1a;
+        }
+    
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             line-height: 1.6;
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: var(--bg);
+            color: var(--text);
             scroll-behavior: smooth;
         }
-
+    
         header {
             text-align: center;
             padding: 60px 20px;
-            background: linear-gradient(135deg, #0077cc, #00bfff);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
         }
-
+    
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-
+    
         nav {
             margin-top: 10px;
         }
-
+    
         nav a {
             color: white;
             margin: 0 15px;
@@ -37,42 +46,43 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
+    
         nav a:hover {
             text-decoration: underline;
-            color: #ffdd57;
+            color: var(--accent);
         }
-
+    
         section {
-            background-color: white;
+            background-color: var(--card);
             padding: 30px 25px;
             margin: 30px auto;
             border-radius: 12px;
             max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(11, 60, 93, 0.15);
         }
-
+    
         h2 {
-            color: #0077cc;
+            color: var(--primary);
             margin-bottom: 15px;
         }
-
+    
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
-
+    
         a {
-            color: #0077cc;
+            color: var(--secondary);
         }
-
+    
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #222;
+            background-color: var(--primary);
             color: white;
         }
     </style>
+
 </head>
 <body>
 
